@@ -1,0 +1,59 @@
+/*
+ * Blinds.hpp
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: JERZSTAN
+ */
+
+#ifndef INC_BLINDS_HPP_
+#define INC_BLINDS_HPP_
+
+#include <string>
+#include <cstddef>
+
+using namespace std;
+
+typedef void (*BlindAction) (byte outputNumber, string room);
+
+enum BlindDirection
+{
+  UP,
+  DOWN
+};
+
+class Blind
+{
+  public:
+	GPIO_TypeDef * outputPeripheral;
+    byte outputNumber;
+    string room;
+    BlindDirection direction;
+	byte id;
+
+    Blind(GPIO_TypeDef * outputPeripheral, byte output, string roomName, BlindDirection blindDirection, byte id);
+    Blind() {}
+};
+
+class Blinds
+{
+  public:
+    void AddBlind(GPIO_TypeDef * outputPeripheral, byte outputNumber, string room, BlindDirection direction);
+    void MoveBlind(string room);
+    void AllBlindsUp();
+    void AllBlindsDown();
+    void DoForEach(BlindAction action);
+	string GetNameById(byte id);
+	byte GetId(string name);
+
+    Blinds()
+    {
+      initializedBlinds = 0;
+    }
+
+  private:
+    void MoveBlind(byte outputNumber);
+    Blind blinds[20];
+	int initializedBlinds;
+};
+
+#endif /* INC_BLINDS_HPP_ */

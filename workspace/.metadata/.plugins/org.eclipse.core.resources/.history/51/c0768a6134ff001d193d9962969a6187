@@ -1,0 +1,242 @@
+#include <Board.hpp>
+#include <string.h>
+#include <algorithm>
+#include "FLASH_SECTOR_F4.h"
+#include "main.h"
+
+Board::Board()
+{
+	scheduler->RestoreScheduledEvents();
+	RestoreSettings();
+}
+
+void Board::ProcessGetRequest(struct netconn *conn, const std::string & endpoint)
+{
+	//RespondHttp(conn);
+	if (endpoint == "/getStatus")
+	{
+		std::string status = lights->GetStatus();
+		netconn_write(conn, status.c_str(), (size_t)status.length(), NETCONN_NOCOPY);
+	}
+	else if (endpoint == "/getScheduledEvents")
+	{
+		std::string events = scheduler->GetEvents();
+		if (events.length() > 0)
+		{
+			netconn_write(conn, events.c_str(), (size_t)events.length(), NETCONN_NOCOPY);
+		}
+		else
+		{
+			netconn_write(conn, "No jobs", (size_t)6, NETCONN_NOCOPY);
+		}
+	}
+	else if (endpoint == "/getTime")
+	{
+		const char * time = GetTime();
+		std::string timeString(time);
+
+		netconn_write(conn, time, timeString.length(), NETCONN_NOCOPY);
+		delete [] time;
+	}
+	else if (endpoint == "/getTwilightMode")
+	{
+		std::string strTwilightMode = std::to_string(twilightMode);
+		netconn_write(conn, strTwilightMode.c_str(), (size_t)strTwilightMode.length(), NETCONN_NOCOPY);
+	}
+	else if (endpoint == "/getHolidayMode")
+	{
+		std::string strHolidayMode = std::to_string(holidayMode);
+		netconn_write(conn, strHolidayMode.c_str(), (size_t)strHolidayMode.length(), NETCONN_NOCOPY);
+	}
+	else if (endpoint == "/getMorningMode")
+	{
+		std::string strMorningMode = GetMorningModeText();
+		netconn_write(conn, strMorningMode.c_str(), (size_t)strMorningMode.length(), NETCONN_NOCOPY);
+	}
+	else if (endpoint == "/getAllSettings")
+	{
+		const char * time = GetTime();
+
+		std::string settings(time);
+		settings += "holidayMode: ";
+		settings += std::to_string(holidayMode);
+		settings += "\n";
+		settings += "twilightMode: ";
+		settings += std::to_string(twilightMode);
+		settings += "\n";
+		settings += GetMorningModeText();
+
+		netconn_write(conn, settings.c_str(), (size_t)settings.length(), NETCONN_NOCOPY);
+
+		delete [] time;
+	}
+}
+
+void Board::ProcessPostRequest(struct netconn *conn, const std::string & endpoint, const std::string & body)
+{
+	if (endpoint == "/impulsOswietlenie" || endpoint == "/impulsRolety")
+	{
+		bool value;
+		std::string parameter = ParseHttpBoolParameter(body, &value);
+
+		if (endpoint == "/impulsOswietlenie")
+		{
+		  if (parameter == "allOff")
+			lights->AllLightsOff();
+		  else
+			lights->SwitchLight(parameter, value);
+		}
+		else if (endpoint == "/impulsRolety")
+		{
+		  if (parameter == "allRoletyUp")
+			blinds->AllBlindsUp();
+		  else if (parameter == "allRoletyDown")
+			blinds->AllBlindsDown();
+		  else
+			blinds->MoveBlind(body);
+		}
+	}
+	else if (endpoint == "/schedule")
+	{
+		std::string::difference_type parameterCount = std::count(body.begin(), body.end(), '\n');
+		std::string * records = new std::string[parameterCount];
+
+		size_t pos = 0;
+		std::string line;
+		int count = 0;
+		std::string payload = body;
+		while ((pos = payload.find("\r\n")) != std::string::npos)
+		{
+			line = payload.substr(0, pos);
+			payload = payload.substr(pos + 2);
+			records[count++] = line;
+		}
+		scheduler->Schedule(records, parameterCount);
+		delete [] records;
+	}
+	else if (endpoint == "/clearSchedule")
+	{
+		scheduler->Clear();
+	}
+	else
+	{
+		if (endpoint == "/enableTwilightMode")
+			twilightMode = true;
+		else if (endpoint == "/disableTwilightMode")
+			twilightMode = false;
+		else if (endpoint == "/enableHolidayMode")
+			holidayMode = true;
+		else if (endpoint == "/disableHolidayMode")
+			holidayMode = false;
+		else if (endpoint == "/setTime")
+		{
+			std::string timeValue;
+			ParseHttpParameter(body, &timeValue);
+
+			int hours = stoi(timeValue.substr(0, 2));
+			int minutes = stoi(timeValue.substr(3, 5));
+			int seconds = stoi(timeValue.substr(6, 8));
+
+			int day = stoi(timeValue.substr(9, 11));
+			int month = stoi(timeValue.substr(12, 14));
+			int year = stoi(timeValue.substr(15, 19));
+
+			SetTime(hours, minutes, seconds, day, month, year);
+		}
+
+		StoreSettings();
+	}
+
+	//RespondHttp(conn);
+	netconn_write(conn, (const unsigned char*)"OK", (size_t)2, NETCONN_NOCOPY);
+}
+
+void Board::RespondHttp(struct netconn *conn)
+{
+	const std::string httpOk = "HTTP/1.1 200 OK\r\n";
+	const std::string contentType = "Content-Type: text/plain\r\n";
+	const std::string connectionHeader = "Connection: close\r\n\r\n";
+
+	const std::string response = httpOk + contentType + connectionHeader;
+
+	netconn_write(conn, response.c_str(), (size_t)response.length(), NETCONN_NOCOPY);
+}
+
+std::string Board::ParseHttpParameter(std::string parameters, std::string * outValue)
+{
+    int equalsIndex = parameters.find('=');
+    string parameter = parameters.substr(0, equalsIndex);
+    *outValue = parameters.substr(equalsIndex + 1);
+
+    return parameter;
+}
+
+std::string Board::ParseHttpBoolParameter(std::string parameters, bool * outValue)
+{
+	std::string boolString;
+	std::string parameter = ParseHttpParameter(parameters, &boolString);
+
+    *outValue = (boolString == "true");
+    return parameter;
+}
+
+std::string Board::GetMorningModeText()
+{
+	std::string text = "morningMode: ";
+	text += std::to_string(morningMode);
+	text += "\n";
+	text += "morningDays: ";
+	text += std::to_string(morningDays);
+	text += "\n";
+	text += "morningTime: ";
+	text += std::to_string(morningHour);
+	text += ":";
+	text += std::to_string(morningMinute);
+	text += "\n";
+
+	return text;
+}
+
+void Board::StoreSettings()
+{
+	uint32_t address = settingsAddress;
+
+	Flash_Write_Data(address, reinterpret_cast<uint8_t*>(&twilightMode), sizeof(bool), true);
+	address += sizeof(bool);
+
+	Flash_Write_Data(address, reinterpret_cast<uint8_t*>(&morningMode), sizeof(bool), false);
+	address += sizeof(bool);
+
+	Flash_Write_Data(address, reinterpret_cast<uint8_t*>(&holidayMode), sizeof(bool), false);
+	address += sizeof(bool);
+
+	Flash_Write_Data(address, reinterpret_cast<uint8_t*>(&morningHour), sizeof(byte), false);
+	address += sizeof(byte);
+
+	Flash_Write_Data(address, reinterpret_cast<uint8_t*>(&morningMinute), sizeof(byte), false);
+	address += sizeof(byte);
+
+	Flash_Write_Data(address, reinterpret_cast<uint8_t*>(&morningDays), sizeof(byte), false);
+}
+
+void Board::RestoreSettings()
+{
+	uint32_t address = settingsAddress;
+
+	Flash_Read_Data(address, reinterpret_cast<uint8_t*>(&twilightMode), sizeof(bool));
+	address += sizeof(bool);
+
+	Flash_Read_Data(address, reinterpret_cast<uint8_t*>(&morningMode), sizeof(bool));
+	address += sizeof(bool);
+
+	Flash_Read_Data(address, reinterpret_cast<uint8_t*>(&holidayMode), sizeof(bool));
+	address += sizeof(bool);
+
+	Flash_Read_Data(address, reinterpret_cast<uint8_t*>(&morningHour), sizeof(byte));
+	address += sizeof(byte);
+
+	Flash_Read_Data(address, reinterpret_cast<uint8_t*>(&morningMinute), sizeof(byte));
+	address += sizeof(byte);
+
+	Flash_Read_Data(address, reinterpret_cast<uint8_t*>(&morningDays), sizeof(byte));
+}

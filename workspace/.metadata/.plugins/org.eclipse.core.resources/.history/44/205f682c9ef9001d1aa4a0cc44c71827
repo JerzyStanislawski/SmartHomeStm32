@@ -1,0 +1,99 @@
+/*
+ * Scheduler.cpp
+ *
+ *  Created on: May 7, 2023
+ *      Author: JERZSTAN
+ */
+
+#include "scheduler.hpp"
+#include "FLASH_SECTOR_F4.h"
+#include <memory>
+
+TimeRecord::TimeRecord(byte roomId, RecordType type, byte hour, byte minute, byte days, bool onOrUp)
+{
+	this->roomId = roomId;
+	this->type = type;
+	this->hour = hour;
+	this->minute = minute;
+	this->onOrUp = onOrUp;
+	this->days = days;
+}
+
+TimeRecord Scheduler::Add(std::string room, RecordType type, byte hour, byte minute, byte days, bool onOrUp)
+{
+	byte id = (byte)2;//type == RecordType::LIGHTS ? lights->GetId(room) : blinds->GetId(room);
+	records[count] = TimeRecord(id, type, hour, minute, days, onOrUp);
+	count++;
+
+	return records[count - 1];
+}
+
+void Scheduler::Schedule(string * records, int count)
+{
+	  long address = 0x08040000;
+	  uint32_t * ucount = new uint32_t;
+	  *ucount = count;
+	  Flash_Write_Data(address, &ucount, 1);
+	  address += 4;
+	  int recordsize = sizeof(TimeRecord);
+
+	  for (int i = 0; i < count; i++)
+	  {
+	      int comma = records[i].find(',');
+	      std::string room = records[i].substr(0, comma);
+	      std::string type = records[i].substr(comma + 1, comma + 2);
+	      byte hours = (byte)atoi(records[i].substr(comma + 3, comma + 5).c_str());
+	      byte minutes = (byte)atoi(records[i].substr(comma + 6, comma + 8).c_str());
+	      byte days = (byte)atoi(records[i].substr(comma + 9, comma + 12).c_str());
+	      byte onOrUp = (byte)atoi(records[i].substr(comma + 13, comma + 14).c_str());
+
+	      TimeRecord record = Add(room, type == "L" ? RecordType::LIGHTS : RecordType::BLINDS, hours, minutes, days, onOrUp == (byte)1);
+
+	      Flash_Write_Data(address, reinterpret_cast<uint32_t*>(&record), sizeof(TimeRecord));
+	      address += sizeof(TimeRecord);
+	  }
+}
+
+void Scheduler::Clear()
+{
+	count = 0;
+}
+
+void Scheduler::Execute(byte hour, byte minute, byte currentDay)
+{
+	for (int i = 0; i < count; i++)
+	{
+		TimeRecord record = records[i];
+
+		if (record.hour == hour && record.minute == minute && ((int)record.days & (1 << (int)currentDay)) == (1 << (int)currentDay))
+		{
+			if (record.type == RecordType::LIGHTS)
+				lights->SwitchLight(lights->GetNameById(record.roomId), record.onOrUp ? true : false);
+			else
+				blinds->MoveBlind(blinds->GetNameById(record.roomId));
+		}
+	}
+}
+
+std::string Scheduler::GetEvents()
+{
+	 for (int i = 0; i < count; i++)
+	 {
+		 TimeRecord record = records[i];
+	 }
+}
+
+void Scheduler::RestoreScheduledEvents(int startAddress)
+{
+	int eeAddress = startAddress;
+	//EEPROM.get(eeAddress, count);
+
+	eeAddress += sizeof(int);
+	for (int i = 0; i < count; i++)
+	{
+		TimeRecord record;
+		//EEPROM.get(eeAddress, record);
+		records[i] = record;
+		eeAddress += sizeof(TimeRecord);
+	}
+}

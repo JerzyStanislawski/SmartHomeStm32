@@ -1,0 +1,10 @@
+22:54:46 **** Incremental Build of configuration Debug for project SimpleHttp ****
+make -j8 all 
+arm-none-eabi-size   SimpleHttp.elf 
+   text	   data	    bss	    dec	    hex	filename
+  70820	    472	  43424	 114716	  1c01c	SimpleHttp.elf
+Finished building: default.size.stdout
+ 
+
+22:54:47 Build Finished. 0 errors, 0 warnings. (took 1s.273ms)
+

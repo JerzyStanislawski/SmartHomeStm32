@@ -1,0 +1,286 @@
+2023-04-22 11:12:52,589 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,607x358,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2023-04-22 11:15:50,533 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 733995624 Bytes (968884224)
+2023-04-22 11:15:50,651 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 760363888 Bytes (968884224)
+2023-04-22 11:15:51,222 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 433316608 Bytes (968884224)
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CORTEX_M7
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-04-22 11:15:51,467 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-04-22 11:15:51,469 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.0.202302231600\\db\
+2023-04-22 11:15:51,716 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp_save
+2023-04-22 11:15:51,776 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp
+2023-04-22 11:15:51,814 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp_save
+2023-04-22 11:15:51,865 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp
+2023-04-22 11:15:52,010 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_vars.tmp_save
+2023-04-22 11:15:52,060 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_vars.tmp
+2023-04-22 11:15:52,064 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_inc.tmp_save
+2023-04-22 11:15:52,123 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_inc.tmp
+2023-04-22 11:15:52,134 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_HalInit.tmp_save
+2023-04-22 11:15:52,191 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_HalInit.tmp
+2023-04-22 11:15:52,198 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_Msp.tmp_save
+2023-04-22 11:15:52,258 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_Msp.tmp
+2023-04-22 11:15:52,444 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 11:15:52,458 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp_save
+2023-04-22 11:15:52,517 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp
+2023-04-22 11:15:52,523 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp_save
+2023-04-22 11:15:52,573 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp
+2023-04-22 11:15:52,614 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp_save
+2023-04-22 11:15:52,670 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp
+2023-04-22 11:15:52,677 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-04-22 11:15:52,737 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp
+2023-04-22 11:15:52,741 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-04-22 11:15:52,791 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp
+2023-04-22 11:15:52,796 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp_save
+2023-04-22 11:15:52,845 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp
+2023-04-22 11:15:52,850 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp_save
+2023-04-22 11:15:52,897 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp
+2023-04-22 11:15:52,904 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 11:15:52,913 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 11:15:52,926 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp_save
+2023-04-22 11:15:52,970 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp
+2023-04-22 11:15:52,978 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp_save
+2023-04-22 11:15:53,021 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp
+2023-04-22 11:15:53,027 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp_save
+2023-04-22 11:15:53,069 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp
+2023-04-22 11:15:53,075 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-04-22 11:15:53,119 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp
+2023-04-22 11:15:53,126 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-04-22 11:15:53,166 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp
+2023-04-22 11:15:53,173 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp_save
+2023-04-22 11:15:53,216 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp
+2023-04-22 11:15:53,222 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp_save
+2023-04-22 11:15:53,266 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp
+2023-04-22 11:15:53,277 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\FreeRTOSConfig.h_save
+2023-04-22 11:15:53,333 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\FreeRTOSConfig.h
+2023-04-22 11:15:53,342 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\freertos.c_save
+2023-04-22 11:15:53,390 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\freertos.c
+2023-04-22 11:15:53,400 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp_save
+2023-04-22 11:15:53,442 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp
+2023-04-22 11:15:53,447 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 11:15:53,466 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.c_save
+2023-04-22 11:15:53,517 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.c
+2023-04-22 11:15:53,525 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.h_save
+2023-04-22 11:15:53,571 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.h
+2023-04-22 11:15:53,580 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\lwipopts.h_save
+2023-04-22 11:15:53,688 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\lwipopts.h
+2023-04-22 11:15:53,701 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.c_save
+2023-04-22 11:15:53,773 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.c
+2023-04-22 11:15:53,780 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.h_save
+2023-04-22 11:15:53,826 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.h
+2023-04-22 11:15:53,844 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c_save
+2023-04-22 11:15:53,967 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c
+2023-04-22 11:15:53,977 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h_save
+2023-04-22 11:15:54,033 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h
+2023-04-22 11:15:54,053 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c_save
+2023-04-22 11:15:54,118 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c
+2023-04-22 11:15:54,124 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp_save
+2023-04-22 11:15:54,167 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp
+2023-04-22 11:15:54,174 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_timebase_tim.c_save
+2023-04-22 11:15:54,224 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_timebase_tim.c
+2023-04-22 11:15:54,245 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-04-22 11:15:54,330 [INFO] CodeEngine:335 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h
+2023-04-22 11:15:54,377 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h_save
+2023-04-22 11:15:54,463 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h
+2023-04-22 11:15:54,476 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c_save
+2023-04-22 11:15:54,595 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c
+2023-04-22 11:15:56,207 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 1128mS.
+2023-04-22 11:15:56,216 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-04-22 11:15:56,374 [INFO] ConfigFileManager:1483 - The Die is : DIE451
+2023-04-22 11:15:58,118 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 1901mS.
+2023-04-22 11:15:58,118 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
+2023-04-22 11:15:58,192 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
+2023-04-22 15:16:09,393 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 425786192 Bytes (968884224)
+2023-04-22 15:16:09,536 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 453049168 Bytes (968884224)
+2023-04-22 15:16:16,726 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 632882000 Bytes (968884224)
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CORTEX_M7
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-04-22 15:16:16,967 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-04-22 15:16:16,969 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.0.202302231600\\db\
+2023-04-22 15:16:17,286 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp_save
+2023-04-22 15:16:17,360 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp
+2023-04-22 15:16:17,421 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp_save
+2023-04-22 15:16:17,528 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp
+2023-04-22 15:16:17,612 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_vars.tmp_save
+2023-04-22 15:16:17,664 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_vars.tmp
+2023-04-22 15:16:17,669 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_inc.tmp_save
+2023-04-22 15:16:17,716 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_inc.tmp
+2023-04-22 15:16:17,723 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_HalInit.tmp_save
+2023-04-22 15:16:17,780 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_HalInit.tmp
+2023-04-22 15:16:17,787 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_Msp.tmp_save
+2023-04-22 15:16:17,851 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_Msp.tmp
+2023-04-22 15:16:18,030 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:16:18,042 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp_save
+2023-04-22 15:16:18,090 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp
+2023-04-22 15:16:18,094 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp_save
+2023-04-22 15:16:18,145 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp
+2023-04-22 15:16:18,151 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp_save
+2023-04-22 15:16:18,231 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp
+2023-04-22 15:16:18,237 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-04-22 15:16:18,290 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp
+2023-04-22 15:16:18,295 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-04-22 15:16:18,345 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp
+2023-04-22 15:16:18,350 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp_save
+2023-04-22 15:16:18,399 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp
+2023-04-22 15:16:18,404 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp_save
+2023-04-22 15:16:18,451 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp
+2023-04-22 15:16:18,460 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:16:18,473 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:16:18,485 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp_save
+2023-04-22 15:16:18,533 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp
+2023-04-22 15:16:18,541 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp_save
+2023-04-22 15:16:18,595 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp
+2023-04-22 15:16:18,602 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp_save
+2023-04-22 15:16:18,652 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp
+2023-04-22 15:16:18,660 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-04-22 15:16:18,711 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp
+2023-04-22 15:16:18,717 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-04-22 15:16:18,764 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp
+2023-04-22 15:16:18,771 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp_save
+2023-04-22 15:16:18,820 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp
+2023-04-22 15:16:18,827 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp_save
+2023-04-22 15:16:18,874 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp
+2023-04-22 15:16:18,885 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\FreeRTOSConfig.h_save
+2023-04-22 15:16:18,946 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\FreeRTOSConfig.h
+2023-04-22 15:16:18,956 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\freertos.c_save
+2023-04-22 15:16:19,012 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\freertos.c
+2023-04-22 15:16:19,025 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp_save
+2023-04-22 15:16:19,073 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp
+2023-04-22 15:16:19,079 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:16:19,102 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.c_save
+2023-04-22 15:16:19,175 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.c
+2023-04-22 15:16:19,185 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.h_save
+2023-04-22 15:16:19,239 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.h
+2023-04-22 15:16:19,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\lwipopts.h_save
+2023-04-22 15:16:19,358 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\lwipopts.h
+2023-04-22 15:16:19,369 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.c_save
+2023-04-22 15:16:19,432 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.c
+2023-04-22 15:16:19,442 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.h_save
+2023-04-22 15:16:19,496 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.h
+2023-04-22 15:16:19,518 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c_save
+2023-04-22 15:16:19,691 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c
+2023-04-22 15:16:19,703 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h_save
+2023-04-22 15:16:19,773 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h
+2023-04-22 15:16:19,799 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c_save
+2023-04-22 15:16:19,885 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c
+2023-04-22 15:16:19,892 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp_save
+2023-04-22 15:16:19,994 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp
+2023-04-22 15:16:20,002 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_timebase_tim.c_save
+2023-04-22 15:16:20,067 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_timebase_tim.c
+2023-04-22 15:16:20,087 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-04-22 15:16:20,145 [INFO] CodeEngine:335 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h
+2023-04-22 15:16:20,176 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h_save
+2023-04-22 15:16:20,238 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h
+2023-04-22 15:16:20,249 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c_save
+2023-04-22 15:16:20,365 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c
+2023-04-22 15:16:22,147 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 1334mS.
+2023-04-22 15:16:22,160 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-04-22 15:16:22,607 [INFO] ConfigFileManager:1483 - The Die is : DIE451
+2023-04-22 15:16:24,802 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 2642mS.
+2023-04-22 15:16:24,804 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 2mS.
+2023-04-22 15:16:24,841 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
+2023-04-22 15:58:13,390 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 572358408 Bytes (979369984)
+2023-04-22 15:58:13,534 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 599095048 Bytes (979369984)
+2023-04-22 15:58:14,121 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 646807304 Bytes (979369984)
+2023-04-22 15:58:14,350 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: FREERTOS
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: SYS
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RTC
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: LWIP
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CORTEX_M7
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-04-22 15:58:14,351 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-04-22 15:58:14,353 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.0.202302231600\\db\
+2023-04-22 15:58:14,657 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp_save
+2023-04-22 15:58:14,724 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp
+2023-04-22 15:58:14,801 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp_save
+2023-04-22 15:58:14,864 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp
+2023-04-22 15:58:14,947 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_vars.tmp_save
+2023-04-22 15:58:14,998 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_vars.tmp
+2023-04-22 15:58:15,002 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_inc.tmp_save
+2023-04-22 15:58:15,056 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_inc.tmp
+2023-04-22 15:58:15,061 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_HalInit.tmp_save
+2023-04-22 15:58:15,114 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_HalInit.tmp
+2023-04-22 15:58:15,120 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_Msp.tmp_save
+2023-04-22 15:58:15,177 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\eth_Msp.tmp
+2023-04-22 15:58:15,301 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:58:15,314 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp_save
+2023-04-22 15:58:15,359 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp
+2023-04-22 15:58:15,364 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp_save
+2023-04-22 15:58:15,413 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp
+2023-04-22 15:58:15,418 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp_save
+2023-04-22 15:58:15,468 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp
+2023-04-22 15:58:15,473 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-04-22 15:58:15,549 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp
+2023-04-22 15:58:15,554 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-04-22 15:58:15,625 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp
+2023-04-22 15:58:15,629 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp_save
+2023-04-22 15:58:15,675 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp
+2023-04-22 15:58:15,679 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp_save
+2023-04-22 15:58:15,726 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp
+2023-04-22 15:58:15,740 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:58:15,752 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:58:15,765 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp_save
+2023-04-22 15:58:15,810 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_inc.tmp
+2023-04-22 15:58:15,818 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp_save
+2023-04-22 15:58:15,866 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_vars.tmp
+2023-04-22 15:58:15,874 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp_save
+2023-04-22 15:58:15,924 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_pfp.tmp
+2023-04-22 15:58:15,933 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp_save
+2023-04-22 15:58:15,987 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_obj_creat.tmp
+2023-04-22 15:58:15,997 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp_save
+2023-04-22 15:58:16,044 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_kernelStart.tmp
+2023-04-22 15:58:16,053 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp_save
+2023-04-22 15:58:16,099 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_default_thread.tmp
+2023-04-22 15:58:16,107 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp_save
+2023-04-22 15:58:16,150 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\rtos_threads.tmp
+2023-04-22 15:58:16,160 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\FreeRTOSConfig.h_save
+2023-04-22 15:58:16,214 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\FreeRTOSConfig.h
+2023-04-22 15:58:16,222 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\freertos.c_save
+2023-04-22 15:58:16,272 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\freertos.c
+2023-04-22 15:58:16,285 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp_save
+2023-04-22 15:58:16,329 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp
+2023-04-22 15:58:16,339 [INFO] Middleware:1439 - No code input for Bsp Dependency
+2023-04-22 15:58:16,361 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.c_save
+2023-04-22 15:58:16,420 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.c
+2023-04-22 15:58:16,429 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.h_save
+2023-04-22 15:58:16,483 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\App\lwip.h
+2023-04-22 15:58:16,493 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\lwipopts.h_save
+2023-04-22 15:58:16,596 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\lwipopts.h
+2023-04-22 15:58:16,607 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.c_save
+2023-04-22 15:58:16,665 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.c
+2023-04-22 15:58:16,673 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.h_save
+2023-04-22 15:58:16,719 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\LWIP\Target\ethernetif.h
+2023-04-22 15:58:16,737 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c_save
+2023-04-22 15:58:16,860 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c
+2023-04-22 15:58:16,867 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h_save
+2023-04-22 15:58:16,917 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h
+2023-04-22 15:58:16,937 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c_save
+2023-04-22 15:58:17,007 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c
+2023-04-22 15:58:17,014 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp_save
+2023-04-22 15:58:17,098 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp
+2023-04-22 15:58:17,108 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_timebase_tim.c_save
+2023-04-22 15:58:17,172 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_timebase_tim.c
+2023-04-22 15:58:17,190 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-04-22 15:58:17,261 [INFO] CodeEngine:335 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h
+2023-04-22 15:58:17,339 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h_save
+2023-04-22 15:58:17,422 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h
+2023-04-22 15:58:17,435 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c_save
+2023-04-22 15:58:17,544 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c
+2023-04-22 15:58:19,084 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 1185mS.
+2023-04-22 15:58:19,095 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-04-22 15:58:19,263 [INFO] ConfigFileManager:1483 - The Die is : DIE451
+2023-04-22 15:58:21,251 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 2156mS.
+2023-04-22 15:58:21,252 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 1mS.
+2023-04-22 15:58:21,299 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.

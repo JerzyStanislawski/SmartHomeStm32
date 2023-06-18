@@ -1,0 +1,79 @@
+/*
+ * Blinds.hpp
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: JERZSTAN
+ */
+
+#ifndef INC_BLINDS_HPP_
+#define INC_BLINDS_HPP_
+
+#include <string>
+#include <cstddef>
+
+using namespace std;
+
+typedef void (*BlindAction) (uint16_t outputNumber, string room);
+
+enum BlindDirection
+{
+	UP,
+	DOWN
+};
+
+class Blind
+{
+public:
+	GPIO_TypeDef * outputPeripheral;
+	uint16_t outputNumber;
+	string room;
+	BlindDirection direction;
+	byte id;
+
+	Blind(GPIO_TypeDef * outputPeripheral, uint16_t output, string roomName, BlindDirection blindDirection, byte id);
+	Blind() {}
+};
+
+class Blinds
+{
+public:
+	void MoveBlind(string room);
+	void AllBlindsUp();
+	void AllBlindsDown();
+	void DoForEach(BlindAction action);
+	string GetNameById(byte id);
+	byte GetId(string name);
+
+private:
+	void MoveBlind(GPIO_TypeDef * outputPeripheral, uint16_t outputNumber);
+	const static int initializedBlinds = 22;
+
+	Blind blinds[initializedBlinds] =
+	{
+			Blind(GPIOE, GPIO_PIN_9, "sypialnia_up", BlindDirection::UP, (byte)0),
+			Blind(GPIOE, GPIO_PIN_10, "sypialnia_down", BlindDirection::DOWN, (byte)1),
+			Blind(GPIOE, GPIO_PIN_11, "pokoj1_1_up", BlindDirection::UP, (byte)2),
+			Blind(GPIOE, GPIO_PIN_12, "pokoj1_1_down", BlindDirection::DOWN, (byte)3),
+			Blind(GPIOE, GPIO_PIN_13, "pokoj1_2_up", BlindDirection::UP, (byte)4),
+			Blind(GPIOE, GPIO_PIN_14, "pokoj1_2_down", BlindDirection::DOWN, (byte)5),
+			Blind(GPIOE, GPIO_PIN_15, "pokoj2_up", BlindDirection::UP, (byte)6),
+			Blind(GPIOF, GPIO_PIN_9, "pokoj2_down", BlindDirection::DOWN, (byte)7),
+
+			Blind(GPIOF, GPIO_PIN_10, "salon1_up", BlindDirection::UP, (byte)8),
+			Blind(GPIOF, GPIO_PIN_11, "salon1_down", BlindDirection::DOWN, (byte)9),
+			Blind(GPIOF, GPIO_PIN_12, "salon2_up", BlindDirection::UP, (byte)10),
+			Blind(GPIOF, GPIO_PIN_13, "salon2_down", BlindDirection::DOWN, (byte)11),
+			Blind(GPIOF, GPIO_PIN_14, "jadalnia_up", BlindDirection::UP, (byte)12),
+			Blind(GPIOF, GPIO_PIN_15, "jadalnia_down", BlindDirection::DOWN, (byte)13),
+			Blind(GPIOG, GPIO_PIN_0, "kuchnia_up", BlindDirection::UP, (byte)14),
+			Blind(GPIOG, GPIO_PIN_1, "kuchnia_down", BlindDirection::DOWN, (byte)15),
+			Blind(GPIOG, GPIO_PIN_2, "gabinet_up", BlindDirection::UP, (byte)16),
+			Blind(GPIOG, GPIO_PIN_3, "gabinet_down", BlindDirection::DOWN, (byte)17),
+			Blind(GPIOG, GPIO_PIN_4, "garderoba_up", BlindDirection::UP, (byte)18),
+			Blind(GPIOG, GPIO_PIN_5, "garderoba_down", BlindDirection::DOWN, (byte)19),
+			Blind(GPIOG, GPIO_PIN_6, "kotlownia_up", BlindDirection::UP, (byte)20),
+			Blind(GPIOG, GPIO_PIN_7, "kotlownia_down", BlindDirection::DOWN, (byte)21)
+	};
+};
+
+#endif /* INC_BLINDS_HPP_ */

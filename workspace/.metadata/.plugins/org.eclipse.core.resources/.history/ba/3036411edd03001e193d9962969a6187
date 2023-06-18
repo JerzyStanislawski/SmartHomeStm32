@@ -1,0 +1,22 @@
+/*
+ * entry.h
+ *
+ *  Created on: Jun 5, 2023
+ *      Author: JERZSTAN
+ */
+
+#include "Board.hpp"
+
+#ifndef INC_ENTRY_H_
+#define INC_ENTRY_H_
+
+void SetTime(int hours, int minutes, int seconds, int day, int month, int year);
+const char * GetTime();
+
+Lights lights;
+Blinds blinds;
+Scheduler scheduler(&lights, &blinds);
+Board board(&scheduler);
+HttpServer server(board);
+
+#endif /* INC_ENTRY_H_ */

@@ -1,0 +1,68 @@
+/*
+ * Lights.hpp
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: JERZSTAN
+ */
+
+#ifndef INC_LIGHTS_HPP_
+#define INC_LIGHTS_HPP_
+
+#include <string>
+#include <cstddef>
+#include "lwip/api.h"
+
+using namespace std;
+
+typedef void (*LightAction) (uint16_t outputNumber, string room, uint16_t mainSwitch, uint16_t altSwitch);
+
+class Light
+{
+  public:
+	GPIO_TypeDef * outputPeripheral;
+	uint16_t outputNumber;
+	GPIO_TypeDef * switchPeripheral;
+	uint16_t switchNumber;
+	GPIO_TypeDef * altSwitchPeripheral;
+	uint16_t altSwitchNumber;
+    string room;
+    bool state;
+    bool switchState;
+    bool altSwitchState;
+	byte id;
+
+    Light(GPIO_TypeDef * outputPeripheral, uint16_t output, GPIO_TypeDef * switchPeripheral, uint16_t mainSwitch, string roomName,
+    		GPIO_TypeDef * altSwitchPeripheral, uint16_t altSwitch, byte id);
+    Light() {}
+
+    void SwitchLight(bool value);
+    bool CheckSwitchState();
+    bool CheckAltSwitchState();
+};
+
+class Lights
+{
+  public:
+    void AddLight(GPIO_TypeDef * outputPeripheral, uint16_t output, GPIO_TypeDef * switchPeripheral, uint16_t mainSwitch, string roomName,
+    	GPIO_TypeDef * altSwitchPeripheral, uint16_t altSwitch);
+    bool CheckAndSwitchLights();
+    void SwitchLight(string room, bool value);
+    void AllLightsOff();
+    void DoForEach(LightAction action);
+    string GetStatus();
+	string GetNameById(byte id);
+	byte GetId(string name);
+
+    Lights()
+    {
+      initializedLights = 0;
+    }
+    Lights(const Lights &);
+
+  private:
+    Light lights[25];
+    int initializedLights;
+};
+
+
+#endif /* INC_LIGHTS_HPP_ */

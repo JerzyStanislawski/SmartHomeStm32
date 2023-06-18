@@ -1,0 +1,29 @@
+/*
+ * entry.c
+ *
+ *  Created on: Jun 5, 2023
+ *      Author: JERZSTAN
+ */
+
+#include "entry.hpp"
+#include "HttpServer.hpp"
+#include "stm32f7xx_hal_rtc.h"
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+Lights lights;
+Blinds blinds;
+Scheduler scheduler(&lights, &blinds);
+Board board(&scheduler);
+HttpServer server(board);
+
+void http_listen()
+{
+	server.http_thread();
+}
+
+#ifdef __cplusplus
+}
+#endif

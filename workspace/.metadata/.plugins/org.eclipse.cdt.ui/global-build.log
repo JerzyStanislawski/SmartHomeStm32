@@ -1,0 +1,309 @@
+23:37:04 **** Incremental Build of configuration Debug for project SmartHomeStm32 ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/Src/Blinds.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Blinds.d" -MT"Core/Src/Blinds.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Blinds.o"
+arm-none-eabi-g++ "../Core/Src/Board.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board.d" -MT"Core/Src/Board.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board.o"
+arm-none-eabi-g++ "../Core/Src/HttpServer.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/HttpServer.d" -MT"Core/Src/HttpServer.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/HttpServer.o"
+arm-none-eabi-g++ "../Core/Src/Lights.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Lights.d" -MT"Core/Src/Lights.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Lights.o"
+arm-none-eabi-g++ "../Core/Src/Scheduler.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Scheduler.d" -MT"Core/Src/Scheduler.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Scheduler.o"
+arm-none-eabi-g++ "../Core/Src/entry.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/entry.d" -MT"Core/Src/entry.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/entry.o"
+In file included from ../Drivers/CMSIS/Include/core_cm7.h:2168,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Src/Board.cpp:1:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Src/Board.cpp:1:
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2237:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2237 |     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2253:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2253 |     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2307:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2307 |     SCB->CCR |=  (uint32_t)SCB_CCR_DC_Msk;  /* enable D-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2329:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2329 |     SCB->CCR &= ~(uint32_t)SCB_CCR_DC_Msk;  /* disable D-Cache */
+      |              ^
+In file included from ../Drivers/CMSIS/Include/core_cm7.h:2168,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Inc/HttpServer.hpp:4,
+                 from ../Core/Src/HttpServer.cpp:1:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Inc/HttpServer.hpp:4,
+                 from ../Core/Src/HttpServer.cpp:1:
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2237:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2237 |     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2253:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2253 |     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2307:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2307 |     SCB->CCR |=  (uint32_t)SCB_CCR_DC_Msk;  /* enable D-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2329:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2329 |     SCB->CCR &= ~(uint32_t)SCB_CCR_DC_Msk;  /* disable D-Cache */
+      |              ^
+In file included from ../Drivers/CMSIS/Include/core_cm7.h:2168,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/entry.hpp:11,
+                 from ../Core/Src/entry.cpp:8:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/entry.hpp:11,
+                 from ../Core/Src/entry.cpp:8:
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2237:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2237 |     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2253:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2253 |     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2307:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2307 |     SCB->CCR |=  (uint32_t)SCB_CCR_DC_Msk;  /* enable D-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2329:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2329 |     SCB->CCR &= ~(uint32_t)SCB_CCR_DC_Msk;  /* disable D-Cache */
+      |              ^
+../Core/Src/Board.cpp: In member function 'void Board::TimerEvent(RTC_TimeTypeDef, RTC_DateTypeDef)':
+../Core/Src/Board.cpp:287:115: warning: comparison of integer expressions of different signedness: 'unsigned int' and 'int' [-Wsign-compare]
+  287 |   if (sTime.Hours == Board::morningHour && sTime.Minutes == morningMinute && (morningDays & (1 << sDate.WeekDay)) == (1 << sDate.WeekDay))
+      |                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "SmartHomeStm32.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SmartHomeStm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SmartHomeStm32.elf
+ 
+arm-none-eabi-size   SmartHomeStm32.elf 
+arm-none-eabi-objdump -h -S  SmartHomeStm32.elf  > "SmartHomeStm32.list"
+   text	   data	    bss	    dec	    hex	filename
+ 145464	    484	  65364	 211312	  33970	SmartHomeStm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: SmartHomeStm32.list
+ 
+23:37:30 **** Incremental Build of configuration Debug for project SmartHomeStm32 ****
+make -j8 all 
+arm-none-eabi-g++ "../Core/Src/Board.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Board.d" -MT"Core/Src/Board.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Board.o"
+arm-none-eabi-g++ "../Core/Src/HttpServer.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/HttpServer.d" -MT"Core/Src/HttpServer.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/HttpServer.o"
+arm-none-eabi-g++ "../Core/Src/Scheduler.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/Scheduler.d" -MT"Core/Src/Scheduler.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/Scheduler.o"
+arm-none-eabi-g++ "../Core/Src/entry.cpp" -mcpu=cortex-m7 -std=gnu++20 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F767xx -c -I../Core/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc -I../Drivers/STM32F7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F7xx/Include -I../Drivers/CMSIS/Include -I../LWIP/App -I../LWIP/Target -I../Middlewares/Third_Party/LwIP/src/include -I../Middlewares/Third_Party/LwIP/system -I../Middlewares/Third_Party/LwIP/src/include/netif/ppp -I../Middlewares/Third_Party/LwIP/src/include/lwip -I../Middlewares/Third_Party/LwIP/src/include/lwip/apps -I../Middlewares/Third_Party/LwIP/src/include/lwip/priv -I../Middlewares/Third_Party/LwIP/src/include/lwip/prot -I../Middlewares/Third_Party/LwIP/src/include/netif -I../Middlewares/Third_Party/LwIP/src/include/compat/posix -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/arpa -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/net -I../Middlewares/Third_Party/LwIP/src/include/compat/posix/sys -I../Middlewares/Third_Party/LwIP/src/include/compat/stdc -I../Middlewares/Third_Party/LwIP/system/arch -I../Drivers/BSP/Components/lan8742 -I../Middlewares/Third_Party/FreeRTOS/Source/include -I../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I../Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1 -O0 -ffunction-sections -fdata-sections -fno-exceptions -fno-rtti -fno-use-cxa-atexit -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/entry.d" -MT"Core/Src/entry.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/entry.o"
+In file included from ../Drivers/CMSIS/Include/core_cm7.h:2168,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Src/Board.cpp:1:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Src/Board.cpp:1:
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2237:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2237 |     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2253:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2253 |     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2307:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2307 |     SCB->CCR |=  (uint32_t)SCB_CCR_DC_Msk;  /* enable D-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2329:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2329 |     SCB->CCR &= ~(uint32_t)SCB_CCR_DC_Msk;  /* disable D-Cache */
+      |              ^
+In file included from ../Drivers/CMSIS/Include/core_cm7.h:2168,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Inc/HttpServer.hpp:4,
+                 from ../Core/Src/HttpServer.cpp:1:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/main.h:30,
+                 from ../Core/Inc/Board.hpp:11,
+                 from ../Core/Inc/HttpServer.hpp:4,
+                 from ../Core/Src/HttpServer.cpp:1:
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2237:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2237 |     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2253:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2253 |     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2307:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2307 |     SCB->CCR |=  (uint32_t)SCB_CCR_DC_Msk;  /* enable D-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2329:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2329 |     SCB->CCR &= ~(uint32_t)SCB_CCR_DC_Msk;  /* disable D-Cache */
+      |              ^
+In file included from ../Drivers/CMSIS/Include/core_cm7.h:2168,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/entry.hpp:11,
+                 from ../Core/Src/entry.cpp:8:
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Enable(uint32_t)':
+../Drivers/CMSIS/Include/mpu_armv7.h:194:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  194 |   SCB->SHCSR |= SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h: In function 'void ARM_MPU_Disable()':
+../Drivers/CMSIS/Include/mpu_armv7.h:205:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  205 |   SCB->SHCSR &= ~SCB_SHCSR_MEMFAULTENA_Msk;
+../Drivers/CMSIS/Include/mpu_armv7.h:207:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+  207 |   MPU->CTRL  &= ~MPU_CTRL_ENABLE_Msk;
+In file included from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f767xx.h:184,
+                 from ../Drivers/CMSIS/Device/ST/STM32F7xx/Include/stm32f7xx.h:133,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_def.h:29,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal_rcc.h:27,
+                 from ../Core/Inc/stm32f7xx_hal_conf.h:271,
+                 from ../Drivers/STM32F7xx_HAL_Driver/Inc/stm32f7xx_hal.h:29,
+                 from ../Core/Inc/entry.hpp:11,
+                 from ../Core/Src/entry.cpp:8:
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2237:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2237 |     SCB->CCR |=  (uint32_t)SCB_CCR_IC_Msk;  /* enable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableICache()':
+../Drivers/CMSIS/Include/core_cm7.h:2253:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2253 |     SCB->CCR &= ~(uint32_t)SCB_CCR_IC_Msk;  /* disable I-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_EnableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2307:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2307 |     SCB->CCR |=  (uint32_t)SCB_CCR_DC_Msk;  /* enable D-Cache */
+      |              ^
+../Drivers/CMSIS/Include/core_cm7.h: In function 'void SCB_DisableDCache()':
+../Drivers/CMSIS/Include/core_cm7.h:2329:14: warning: compound assignment with 'volatile'-qualified left operand is deprecated [-Wvolatile]
+ 2329 |     SCB->CCR &= ~(uint32_t)SCB_CCR_DC_Msk;  /* disable D-Cache */
+      |              ^
+../Core/Src/Board.cpp: In member function 'void Board::TimerEvent(RTC_TimeTypeDef, RTC_DateTypeDef)':
+../Core/Src/Board.cpp:287:115: warning: comparison of integer expressions of different signedness: 'unsigned int' and 'int' [-Wsign-compare]
+  287 |   if (sTime.Hours == Board::morningHour && sTime.Minutes == morningMinute && (morningDays & (1 << sDate.WeekDay)) == (1 << sDate.WeekDay))
+      |                                                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-g++ -o "SmartHomeStm32.elf" @"objects.list"   -mcpu=cortex-m7 -T"C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="SmartHomeStm32.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -lstdc++ -lsupc++ -Wl,--end-group
+Finished building target: SmartHomeStm32.elf
+ 
+arm-none-eabi-size   SmartHomeStm32.elf 
+arm-none-eabi-objdump -h -S  SmartHomeStm32.elf  > "SmartHomeStm32.list"
+   text	   data	    bss	    dec	    hex	filename
+ 145464	    484	  65364	 211312	  33970	SmartHomeStm32.elf
+Finished building: default.size.stdout
+ 
+Finished building: SmartHomeStm32.list
+ 
+22:14:35 **** Incremental Build of configuration Debug for project SmartHomeStm32 ****
+make -j8 all 
+arm-none-eabi-size   SmartHomeStm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 145464	    484	  65364	 211312	  33970	SmartHomeStm32.elf
+Finished building: default.size.stdout
+ 

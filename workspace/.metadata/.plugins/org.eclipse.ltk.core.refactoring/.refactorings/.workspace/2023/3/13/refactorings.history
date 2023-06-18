@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 4 resources" deleteContents="false" description="Delete 4 resources" element1="/HelloWorld/Middlewares/Third_Party/LwIP/src/apps/http/fs" element2="/HelloWorld/Middlewares/Third_Party/LwIP/src/apps/http/fsdata.c" element3="/HelloWorld/Middlewares/Third_Party/LwIP/src/apps/http/makeFSdata.exe" element4="/HelloWorld/Middlewares/Third_Party/LwIP/src/apps/http/tryMakeFSdata.bat" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="4" stamp="1680213065775"/>
+</session>

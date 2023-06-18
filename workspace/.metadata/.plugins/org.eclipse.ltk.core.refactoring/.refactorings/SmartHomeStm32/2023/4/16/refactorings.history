@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SmartHomeStm32/Core/Src/HttpServer.cpp&apos; to &apos;http_server.cpp&apos;" description="Rename resource &apos;HttpServer.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/HttpServer.cpp" name="http_server.cpp" stamp="1682173991559" updateReferences="true"/>
+</session>

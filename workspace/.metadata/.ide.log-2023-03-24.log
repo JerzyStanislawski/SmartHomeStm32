@@ -1,0 +1,40 @@
+2023-03-25 16:50:10,607 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 493186240 Bytes (723517440)
+2023-03-25 16:50:15,912 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 537382800 Bytes (723517440)
+2023-03-25 16:50:16,100 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 567791504 Bytes (723517440)
+2023-03-25 16:50:16,418 [INFO] ProjectBuilder:2308 - IP not ready for code generation: Clock
+2023-03-25 16:50:24,714 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2023-03-25 16:50:24,715 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2023-03-25 16:50:24,715 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: CORTEX_M7
+2023-03-25 16:50:24,715 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2023-03-25 16:50:24,715 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: ETH
+2023-03-25 16:50:24,716 [INFO] CodeGenerator:793 - code generatio: config db path: C:\ST\STM32CubeIDE_1.12.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.8.0.202302231600\\db\
+2023-03-25 16:50:24,868 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp_save
+2023-03-25 16:50:24,979 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\license.tmp
+2023-03-25 16:50:25,055 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp_save
+2023-03-25 16:50:25,127 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\gpio.tmp
+2023-03-25 16:50:25,266 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp_save
+2023-03-25 16:50:25,426 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\cortex.tmp
+2023-03-25 16:50:25,455 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c_save
+2023-03-25 16:50:25,598 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_it.c
+2023-03-25 16:50:25,607 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h_save
+2023-03-25 16:50:25,666 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_it.h
+2023-03-25 16:50:25,719 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c_save
+2023-03-25 16:50:25,820 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\stm32f7xx_hal_msp.c
+2023-03-25 16:50:25,830 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp_save
+2023-03-25 16:50:25,885 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\MXTmpFiles\system.tmp
+2023-03-25 16:50:25,906 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h_save
+2023-03-25 16:50:25,977 [INFO] CodeEngine:335 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\stm32f7xx_hal_conf.h
+2023-03-25 16:50:26,008 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h_save
+2023-03-25 16:50:26,082 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Inc\main.h
+2023-03-25 16:50:26,093 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c_save
+2023-03-25 16:50:26,185 [INFO] CodeEngine:279 - Generated code: C:\Users\jerzstaN\STM32CubeIDE\workspace\HelloWorld\Core\Src\main.c
+2023-03-25 16:50:26,860 [INFO] ProjectBuilder:2996 - Time for Copy HAL[1] : 306mS.
+2023-03-25 16:50:26,863 [INFO] ProjectBuilder:4304 - Project Generator version: 3.19.2
+2023-03-25 16:50:27,170 [INFO] ConfigFileManager:1483 - The Die is : DIE451
+2023-03-25 16:50:28,545 [INFO] ProjectBuilder:4505 - Time for Generating toolchain IDE Files: 1682mS.
+2023-03-25 16:50:28,547 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 1mS.
+2023-03-25 16:50:28,552 [INFO] ProjectBuilder:2867 - Time for Copy CMSIS : 0mS.
+2023-03-25 16:54:41,999 [INFO] WebAppUi:241 - Path where cad_preferences.json is located C:\Users\jerzstaN/.stm32cubeide/
+2023-03-25 16:54:41,999 [INFO] WebAppUi:242 - Updating consent from JSON file
+2023-03-25 16:54:42,601 [INFO] WebAppUi:430 - JxBrowser engine has been closed 
+2023-03-25 16:54:42,601 [INFO] WebAppUi:467 - Close the Jxbrowser engine manually

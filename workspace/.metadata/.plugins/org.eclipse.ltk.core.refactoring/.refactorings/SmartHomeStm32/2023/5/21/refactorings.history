@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SmartHomeStm32/Core/Src/FLASH_SECTOR_F4.c&apos; to &apos;FLASH_SECTOR_F4.cpp&apos;" description="Rename resource &apos;FLASH_SECTOR_F4.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/FLASH_SECTOR_F4.c" name="FLASH_SECTOR_F4.cpp" stamp="1684700478470" updateReferences="true"/>
+</session>

@@ -1,0 +1,65 @@
+/*
+ * Scheduler.hpp
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: JERZSTAN
+ */
+
+#ifndef INC_SCHEDULER_HPP_
+#define INC_SCHEDULER_HPP_
+
+#include "lights.hpp"
+#include "blinds.hpp"
+#include <string>
+#include <cstddef>
+#include "lwip/api.h"
+
+using namespace std;
+
+enum RecordType
+{
+  LIGHTS,
+  BLINDS
+};
+
+struct TimeRecord
+{
+	byte roomId;
+	RecordType type;
+	byte hour;
+	byte minute;
+	byte days;
+	bool onOrUp;
+
+  TimeRecord(byte roomId, RecordType type, byte hour, byte minute, byte days, bool onOrUp);
+  TimeRecord() {}
+};
+
+class Scheduler
+{
+  public:
+	TimeRecord Add(std::string room, RecordType type, byte hour, byte minute, byte days, bool onOrUp);
+    void Clear();
+	void Execute(int hour, int minute, int currentDay);
+	std::string GetEvents();
+	void RestoreScheduledEvents();
+	void Schedule(std::string * records, int count);
+
+    Scheduler(Lights * lights, Blinds * blinds)
+    {
+	  this->lights = lights;
+	  this->blinds = blinds;
+
+	  count = 0;
+    }
+
+  private:
+    TimeRecord records[100];
+    int count;
+    static const uint32_t startAddress = 0x08040000;
+
+	Lights * lights;
+	Blinds * blinds;
+};
+
+#endif /* INC_SCHEDULER_HPP_ */

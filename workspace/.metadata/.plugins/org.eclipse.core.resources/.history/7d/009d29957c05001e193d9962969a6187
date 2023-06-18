@@ -1,0 +1,26 @@
+/*
+ * entry.h
+ *
+ *  Created on: Jun 5, 2023
+ *      Author: JERZSTAN
+ */
+
+#ifndef INC_ENTRY_H_
+#define INC_ENTRY_H_
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+RTC_HandleTypeDef * hrtc2;
+
+void http_listen();
+
+void SetTime(int hours, int minutes, int seconds, int day, int month, int year);
+const char * GetTime();
+
+#ifdef __cplusplus
+}
+#endif
+
+#endif /* INC_ENTRY_H_ */

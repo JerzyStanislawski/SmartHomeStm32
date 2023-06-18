@@ -1,0 +1,10 @@
+22:14:35 **** Incremental Build of configuration Debug for project SmartHomeStm32 ****
+make -j8 all 
+arm-none-eabi-size   SmartHomeStm32.elf 
+   text	   data	    bss	    dec	    hex	filename
+ 145464	    484	  65364	 211312	  33970	SmartHomeStm32.elf
+Finished building: default.size.stdout
+ 
+
+22:14:39 Build Finished. 0 errors, 0 warnings. (took 3s.886ms)
+

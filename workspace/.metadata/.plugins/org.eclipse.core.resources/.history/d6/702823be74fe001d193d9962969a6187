@@ -1,0 +1,100 @@
+#include <HttpServer.hpp>
+#include "lwip/api.h"
+#include "lwip.h"
+#include <string>
+
+void HttpServer::handle_request(struct netconn *conn)
+{
+	struct netbuf *inbuf;
+	err_t recv_err;
+	char *buf;
+	u16_t buflen;
+
+	/* Read the data from the port, blocking if nothing yet there */
+	recv_err = netconn_recv(conn, &inbuf);
+
+	if (recv_err == ERR_OK)
+	{
+		if (netconn_err(conn) == ERR_OK)
+		{
+			/* Get the data pointer and length of the data inside a netbuf */
+			netbuf_data(inbuf, (void**)&buf, &buflen);
+
+			std::string request(buf);
+			int firstSpacePos = request.find(" ");
+			std::string method = request.substr(0, firstSpacePos);
+			request = request.substr(firstSpacePos + 1);
+			std::string url = request.substr(0, request.find(" "));
+
+			if (method.compare("POST") == 0)
+			{
+				std::string body;
+
+				struct netbuf *inbuf2;
+				char *buf2;
+
+				recv_err = netconn_recv(conn, &inbuf2);
+				if (recv_err == ERR_OK)
+				{
+					netbuf_data(inbuf2, (void**)&buf2, &buflen);
+					body = buf2;
+				}
+				else
+				{
+					body = request.substr(request.find("\r\n\r\n") + 3);
+				}
+
+				netbuf_delete(inbuf2);
+				delete [] buf2;
+
+				board.ProcessPostRequest(conn, url, body);
+			}
+			else if (method.compare("GET") == 0)
+			{
+				board.ProcessGetRequest(conn, url);
+			}
+			delete [] buf;
+		}
+	}
+	/* Close the connection (server closes in HTTP) */
+	netconn_close(conn);
+
+	/* Delete the buffer (netconn_recv gives us ownership,
+   so we have to make sure to deallocate the buffer) */
+	netbuf_delete(inbuf);
+}
+
+void HttpServer::http_thread()
+{
+  struct netconn *conn, *newconn;
+  err_t err, accept_err;
+
+  /* Create a new TCP connection handle */
+  conn = netconn_new(NETCONN_TCP);
+
+  if (conn!= NULL)
+  {
+    /* Bind to port 80 (HTTP) with default IP address */
+    err = netconn_bind(conn, IP_ADDR_ANY, 80);
+
+    if (err == ERR_OK)
+    {
+      /* Put the connection into LISTEN state */
+      netconn_listen(conn);
+
+      while(1)
+      {
+        /* accept any incoming connection */
+        accept_err = netconn_accept(conn, &newconn);
+        if(accept_err == ERR_OK)
+        {
+          /* serve connection */
+        	handle_request(newconn);
+
+          /* delete connection */
+          netconn_delete(newconn);
+        }
+      }
+    }
+  }
+}

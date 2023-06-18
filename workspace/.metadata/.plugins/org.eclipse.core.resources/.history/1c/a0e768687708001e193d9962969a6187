@@ -1,0 +1,67 @@
+/*
+ * Lights.hpp
+ *
+ *  Created on: Apr 27, 2023
+ *      Author: JERZSTAN
+ */
+
+#ifndef INC_LIGHTS_HPP_
+#define INC_LIGHTS_HPP_
+
+#include <string>
+#include <cstddef>
+#include "lwip/api.h"
+
+using namespace std;
+
+typedef void (*LightAction) (byte outputNumber, string room, byte mainSwitch, byte altSwitch);
+
+class Light
+{
+  public:
+	GPIO_TypeDef * outputPeripheral;
+    byte outputNumber;
+	GPIO_TypeDef * switchPeripheral;
+    byte switchNumber;
+	GPIO_TypeDef * altSwitchPeripheral;
+    byte altSwitchNumber;
+    string room;
+    bool state;
+    bool switchState;
+    bool altSwitchState;
+	byte id;
+
+    Light(GPIO_TypeDef * outputPeripheral, byte output, GPIO_TypeDef * switchPeripheral, byte mainSwitch, string roomName,
+    		GPIO_TypeDef * altSwitchPeripheral, byte altSwitch, byte id);
+    Light() {}
+
+    void SwitchLight(bool value);
+    bool CheckSwitchState();
+    bool CheckAltSwitchState();
+};
+
+class Lights
+{
+  public:
+    void AddLight(byte outputNumber, byte switchNumber, string room, byte altSwitchNumber);
+    bool CheckAndSwitchLights();
+    void SwitchLight(string room, bool value);
+    void AllLightsOff();
+    void DoForEach(LightAction action);
+    string GetStatus();
+	string GetNameById(byte id);
+	byte GetId(string name);
+
+    Lights()
+    {
+      initializedLights = 0;
+    }
+    Lights(const Lights &);
+
+  private:
+    Light lights[25];
+    int initializedLights;
+};
+
+
+#endif /* INC_LIGHTS_HPP_ */

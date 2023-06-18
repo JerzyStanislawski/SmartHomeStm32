@@ -1,0 +1,87 @@
+/*
+ * Blinds.cpp
+ *
+ *  Created on: May 7, 2023
+ *      Author: JERZSTAN
+ */
+
+#include "blinds.hpp"
+#include <string.h>
+
+Blind::Blind(GPIO_TypeDef * outputPeripheral, uint16_t output, string roomName, BlindDirection blindDirection, byte id)
+{
+	this->outputPeripheral = outputPeripheral;
+	this->outputNumber = output;
+	this->room = roomName;
+	this->direction = blindDirection;
+	this->id = id;
+}
+
+void Blinds::MoveBlind(GPIO_TypeDef * outputPeripheral, uint16_t outputNumber)
+{
+	HAL_GPIO_WritePin(outputPeripheral, outputNumber, GPIO_PIN_SET);
+	HAL_Delay(1000);
+	HAL_GPIO_WritePin(outputPeripheral, outputNumber, GPIO_PIN_RESET);
+}
+
+void Blinds::MoveBlind(string room)
+{
+	for (int i = 0; i < initializedBlinds; i++)
+	{
+		if (blinds[i].room == room)
+		{
+			MoveBlind(blinds[i].outputPeripheral, blinds[i].outputNumber);
+			return;
+		}
+	}
+}
+
+void Blinds::AllBlindsUp()
+{
+	for (int i = 0; i < initializedBlinds; i++)
+	{
+		if (blinds[i].direction == BlindDirection::UP)
+		{
+			MoveBlind(blinds[i].outputPeripheral, blinds[i].outputNumber);
+		}
+	}
+}
+
+void Blinds::AllBlindsDown()
+{
+	for (int i = 0; i < initializedBlinds; i++)
+	{
+		if (blinds[i].direction == BlindDirection::DOWN)
+		{
+			MoveBlind(blinds[i].outputPeripheral, blinds[i].outputNumber);
+		}
+	}
+}
+
+void Blinds::DoForEach(BlindAction action)
+{
+	for (int i = 0; i < initializedBlinds; i++)
+	{
+		action(blinds[i].outputNumber, blinds[i].room);
+	}
+}
+
+byte Blinds::GetId(string name)
+{
+	for (int i = 0; i < initializedBlinds; i++)
+	{
+		if (blinds[i].room == name)
+			return blinds[i].id;
+	}
+	return (byte)0;
+}
+
+string Blinds::GetNameById(byte id)
+{
+	for (int i = 0; i < initializedBlinds; i++)
+	{
+		if (blinds[i].id == id)
+			return blinds[i].room;
+	}
+	return "";
+}
